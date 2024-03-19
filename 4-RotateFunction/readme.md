@@ -1,0 +1,4 @@
+The mathematical relationship for function values f(K) in terms of f(K - 1), the sum of array elements sum, and array size n is derived as f(K) = f(K-1) + sum - n * (array[n - k]). This formula is used in a dynamic programming approach in the dp array to efficiently compute the maximum rotated function value. The algorithm initializes f(0) in the dp array and calculates it as the initial function value, then iteratively computes f(k) using the derived relationship while updating the maximum value encountered so far. This approach avoids redundant calculations and optimizes the computation process, resulting in an efficient solution for finding the maximum rotated function value of the given array.
+
+Time Complexity : O(n)
+Space Complexity : O(n)

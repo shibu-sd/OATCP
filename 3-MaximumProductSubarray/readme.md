@@ -1,0 +1,4 @@
+In this problem, we calculate the subarray with the largest product by initializing ans as LLONG_MIN, and pref and suff as 0 which indicates the prefix product and the suffix product of the numbers respectively. The algorithm iterates through the array, updating pref and suff by multiplying them with the current element and the element from the end of the array, respectively, modulo MOD. If either becomes zero, it resets them to 1. It keeps track of the maximum product ans as the maximum of ans, pref, and suff (modulo MOD). This method efficiently handles arrays containing negative numbers by considering both positive and negative product possibilities, ensuring that the algorithm explores various subarray combinations to determine the one with the largest product while accounting for the impact of negative numbers on the product calculation.
+
+Time Complexity : O(n)
+Space Complexity : O(1)
